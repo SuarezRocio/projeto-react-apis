@@ -1,8 +1,11 @@
 import styled from "styled-components";
 
 export const Div1 = styled.div`{
+    display: flex;
+    flex-flow: column wrap;
     background-color: #5E5E5E;
-    min-height: 100vh;
+    width: 100%;
+    /*min-height: 100vh;*/
     padding: 5vh 3vw;
 }`
 
@@ -24,20 +27,37 @@ export const Button = styled.button`{
     border-radius: 8px;
 }`
 
-export const Div4 = styled.div`{
+export const Section = styled.section`
+display: flex;
+flex-flow: row wrap;
+width: 100%;
+justify-content: space-around;
+`
+
+
+
+export const Div4 = styled.header`
     min-height: 10vh;
     display: flex;
     justify-content: center;
     color: pink;
-    background-image:url("./pokemon.png");
-}`
+`
 
-export const Div3 = styled.div`{
+
+export const Container = styled.div`
+  section {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 8px;
+  }
+`;
+
+/*export const Div3 = styled.div`{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(170px, 0.5fr));
     grid-gap: 5rem;-  
     flex-basis: 80%;   
-}`
+}`*/
 
 
 /** >> Div1

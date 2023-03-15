@@ -1,15 +1,21 @@
 import styled from "styled-components";
 
+export const Pokebol = styled.img`{
+    position: absolute;
+    top: 0;
+    right: 0;
+}`
 
 export const Div = styled.div` {
-   background-color: rgb(114,159,146);
-    width: 120%;
+    background-color: rgb(114,159,146);
+    position: relative;
+    width: 30%;
+    min-width: 360px;
     border-radius: 10px;
     padding: 0 10px 10px 10px;
     color: white;
-    margin-top: 30px;
+    margin: 60px auto;
 }`
-
 
 export const Div1 = styled.div`{
     display: flex;
@@ -17,7 +23,6 @@ export const Div1 = styled.div`{
 }`
 
 export const Div4 = styled.div`{
-    background-image: url("./pngwing\ 2.png");
     background-size: cover;
     transform: translateX(-40px);
 }`
@@ -31,16 +36,23 @@ export const Div2 = styled.div`{
 
 export const Img = styled.img `{
     position: relative;
+    max-height: 240px;
+    max-width: 120px; 
     top:-30px;
     right: -20px;
 }`
 
-export const Span = styled.span`{
+/*export const Span = styled.span`{
     display: inline-block;
     padding: 5px;
     background-color: #AD61AE;
     border-radius: 5px;
-}`
+}`*/
+export const Divspan = styled.div`{
+    display: flex;
+    justify-content: space-around;
+}`   
+
 
 export const Div5 = styled.div `{
     display: flex;
@@ -57,8 +69,7 @@ export const Button = styled.button `{
 
 export const Section = styled.div`{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    flex-flow: column wrap;
    }`
 
 /**export const H1 = styled.h1`{

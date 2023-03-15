@@ -60,6 +60,7 @@ export const Div5 = styled.div`{
     display: flex;
     flex-direction: column;
     gap: 20px;
+    overflow: scroll;
 }`
 
 
@@ -72,13 +73,13 @@ export const Divimagen = styled.div`{
 export const Img = styled.img`{
      width: 200px;    
 }`
-
+/*
 export const Divinfo = styled.div`{
     display: flex;
     gap: 10px;
     flex-direction: column;
     color: white;
-}`
+}`*/
 export const H2 = styled.h2`{
     font-size: 2.3rem; 
 }`

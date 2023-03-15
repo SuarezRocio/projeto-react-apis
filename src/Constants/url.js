@@ -1,1 +1,1 @@
-// anotar la url de la base de datos de mi pokeapi
+export const BASE_URL = "https://pokeapi.co/api/v2/pokemon";
