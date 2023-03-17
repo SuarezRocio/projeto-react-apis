@@ -3,34 +3,29 @@ import { Link } from "react-router-dom";
 import { Div, Div1, Img, Div4, Div2, Divspan, Div5, Button, Section, Pokebol } from "./styled";
 import { getTypes } from "./ReturnPokemonType";
 import pokebol from "../../assets/pngwing 2.png";
-import { useState, useEffect } from "react";
-import axios from "axios";
+//import { useState } from "react";
+import {useLocation , useNavigate} from "react-router-dom"
+//import axios from "axios";
+//import {useRequestData} from "../../Hooks/useRequesData"
+//import { GlobalContext } from "../../GlobalContext/globalState";
+//import { useContext } from "react";
+//import { irPokemonDetail } from "../../routes/cordinator";
+//import { irParaPokedexPage } from "../../routes/cordinator";
 
-const Card = ({ pokemon, loading, infoPokemon, addToPokedex, removeFromPokedex }) => {
+const Card = ({pokemon, loading, infoPokemon}) => {
+
+//const { addToPokedex, removeFromPokedex} = useContext(GlobalContext);
+
     //console.log(pokemonResponse) 
-    console.log(pokemon)
-    
-    
-  const [pokemon, setPokemon] = useState({});
+    //console.log(pokemon)
+    //,location
     // hook para saber nosso path atual
     const location = useLocation();
 
     // hook para redirecionar
     const navigate = useNavigate();  
-
-    useEffect(() => {
-        fetchPokemon();
-      }, []);
     
-      const fetchPokemon = async () => {
-        try {
-          const response = await axios.get(pokemonUrl);
-          setPokemon(response.data);
-        } catch (error) {
-          console.log("Erro ao buscar lista de pokemons");
-          console.log(error);
-        }
-      };
+    //const [pokemon, loading, infoPokemon] = useRequestData({}, `/${pokemon.name}`)
 
     return (
         <>
@@ -63,7 +58,12 @@ const Card = ({ pokemon, loading, infoPokemon, addToPokedex, removeFromPokedex }
                                             <Img srcSet={item.sprites.other['dream_world']['front_default']} alt="" />
                                         </Div4>
                                     </Div1>
-                                    <Div5 class="buttons-container">
+                                    <Div5>
+                                    <Link to={`/pokemonDetail/${item.id}`} key={item.id}>
+                                            Dathalle
+                                        </Link>
+                                    <Button>Captcha!</Button></Div5>
+                                    {/*<Div5 class="buttons-container">
                                         <Link to={`/pokemonDetail/${item.id}`} key={item.id}>
                                             Dathalle
                                         </Link>
@@ -75,7 +75,7 @@ const Card = ({ pokemon, loading, infoPokemon, addToPokedex, removeFromPokedex }
                                             <Button onClick={() => removeFromPokedex(pokemon)}>Remover da Pokedex</Button>
                                         )}
                                         </div>
-                                    </Div5>
+                                    </Div5>*/}
                                 </Div>
                             </Section>
 

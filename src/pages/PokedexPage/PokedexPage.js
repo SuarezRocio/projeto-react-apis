@@ -1,11 +1,13 @@
-import Card from "../../Components/Card/Card";
+/*import Card from "../../Components/Card/Card";
 import { Container } from "./styled";
 import {Header} from "../../Components/Header/Header";
 import { BASE_URL } from "../../Constants/url";
+import { GlobalContext } from "../../GlobalContext/globalState";
+import { useContext } from "react";
 
 function PokedexPage(props) {
-  const { pokedex, removeFromPokedex } = props;
-
+  const { pokedex, removeFromPokedex } = useContext(GlobalContext);
+ 
   return (
     <Container>
       <Header />
@@ -22,4 +24,4 @@ function PokedexPage(props) {
   );
 }
 
-export default PokedexPage;
+export default PokedexPage;*/

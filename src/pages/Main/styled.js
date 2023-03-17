@@ -42,7 +42,7 @@ export const Div4 = styled.header`
     justify-content: center;
     color: pink;
 `
-
+/*
 
 export const Container = styled.div`
   section {
@@ -50,7 +50,7 @@ export const Container = styled.div`
     grid-template-columns: repeat(5, 1fr);
     grid-gap: 8px;
   }
-`;
+`;*/
 
 /*export const Div3 = styled.div`{
     display: grid;
