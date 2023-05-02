@@ -24,6 +24,11 @@ _É objetivo deste projeto criar um site com três páginas usando a Poke Api co
     Axios
 
 
+______________________________________________________________________________
+
+Link do meu projeto: : https://conway-pokedex.surge.sh
+
+
 **HOME**
 Lista de pokémons com um botão Detalhe e um botão Adicionar Pokémon
 
@@ -32,15 +37,3 @@ Você pode ver os detalhes do pokémon, seus movimentos e seus poderes, com uma 
 
 **CARRINHO POKÉMON**
 Você pode ver o pokémon que adicionei e também tenho a opção de removê-lo
-______________________________________________________________________________
-
-Link do meu projeto: : https://conway-pokedex.surge.sh
-
-**HOME**
-Lista de pokemons con un boton de Detalle y un boton de Adicionar Pokemon
-
-**DETALLE** 
-Se ven los detalles del pokemon sus movimientos y sus poderes, con una foto frontal y trasera de cada pokemon
-
-**CARRITO POKEMON**
-Se ven los pokemon que yo adicione y tambien tengo la opcion de removerlo
