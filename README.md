@@ -24,7 +24,7 @@ React Context
 Axios
 
 Link do meu projeto: :
-https://pokedex-conway-newversion.surge.sh/pokedex
+https://pokedex-conway-newversion.surge.sh/
 
 HOME Lista de pokémons com um botão Detalhe e um botão Adicionar Pokémon
 
